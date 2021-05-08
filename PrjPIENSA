@@ -1,0 +1,26 @@
+import javax.swing.*;
+
+public class Units {
+    String horario;
+    String ToDolists;
+    String alarma;
+    String proyecto;
+
+    public void out() {
+        Units prj = new Units();
+        prj.proyecto = "Aplicacion web para administrar el tiempo de estudiantes";
+        JOptionPane.showMessageDialog(null,"Mi proyecto de PIENSA es: " + prj.proyecto);
+
+        Units hor = new Units();
+        hor.horario = "hoy";
+        JOptionPane.showMessageDialog(null,"**Elemento de mi proyecto: Horario**\nEl horario es de " + hor.horario);
+
+        Units ToDo = new Units();
+        ToDo.ToDolists = "- Hacer el deber del viernes\n- Compras para la casa\n- Asear la casa";
+        JOptionPane.showMessageDialog(null,"**Elemento de mi proyecto: ToDo lists**\nCosas por hacer:\n " + ToDo.ToDolists);
+
+        Units alm = new Units();
+        alm.alarma = "A las 6:00pm";
+        JOptionPane.showMessageDialog(null,"**Elemento de mi proyecto: Alarmas**\nAlarma activada: " + alm.alarma);
+    }
+}
